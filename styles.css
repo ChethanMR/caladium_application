@@ -1,0 +1,649 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Ubuntu", sans-serif;
+  /* font-weight: 300; */
+  font-style: normal;
+}
+.active-btn {
+  padding: 0.65rem 0.85rem;
+  background-color: #f8f1e3;
+  color: #224229;
+  border-radius: 20px;
+  width: 120px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  font-family: "Ubuntu", sans-serif;
+}
+.flex-column {
+  flex-direction: column;
+}
+.p-40-120 {
+  padding: 40px 120px;
+}
+.card-active {
+  background-color: #224229;
+  color: white;
+}
+.h1,
+.h3,
+button {
+  font-family: "Ubuntu", sans-serif;
+}
+/*------ HEADER ----*/
+.header {
+  position: sticky;
+  top: 0;
+}
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 120px;
+  background-color: #224229;
+  color: white;
+}
+.header-container .menu-icon {
+  display: none;
+}
+.header-container .heading {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: "Ubuntu", sans-serif;
+}
+.nav-bar {
+  display: flex;
+  align-items: center;
+  /* gap: 8rem; */
+  gap: 5vw;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
+}
+nav ul li {
+  margin: 0.25rem;
+  font-family: "Ubuntu", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  text-align: left;
+}
+.nav-bar .btn-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.nav-bar .btn-container button {
+  font-family: "Ubuntu", sans-serif;
+  color: white;
+  font-size: 14px;
+  line-height: 16px;
+  background-color: transparent;
+  /* outline: none; */
+  border: none;
+  cursor: pointer;
+}
+/* .nav-bar .btn-container button:hover{
+    padding: 0.5rem 0.75rem;
+    background-color: white;
+    color: #224229;
+    border-radius: 20px;
+} */
+.nav-bar .btn-container .sign-active {
+  padding: 0.65rem 0.85rem;
+  background-color: #f8f1e3;
+  color: #224229;
+  border-radius: 20px;
+  width: 120px;
+  font-weight: 500;
+}
+
+/*----- Favorite Fresh Plant --*/
+
+.f-p-main {
+  background-color: #224229;
+  color: white;
+  display: flex;
+  padding-bottom: 0rem;
+}
+.f-p-heading {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  text-align: right;
+  padding: 0rem 0 3rem 5rem;
+}
+
+.f-p-heading h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65px;
+  letter-spacing: 0em;
+  text-align: right;
+  margin: 0;
+  padding-left: 10vw;
+}
+.f-p-heading p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: right;
+  margin-top: 1.5rem;
+}
+.f-p-heading button {
+  margin-top: 2rem;
+}
+.f-p-main .f-p-image {
+  width: 461px;
+  height: 440px;
+  border-radius: 120px 0px 120px 0px;
+  border: 1px solid #f8f1e3;
+  padding: 1.75rem;
+}
+.f-p-image img {
+  width: 400px;
+  height: 556px;
+  border-radius: 120px 0px 120px 0px;
+  object-fit: cover;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.25);
+}
+
+/*----- QUALITY PRODUCTS --*/
+.best-product {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 0.75rem;
+  margin-top: 5rem;
+}
+.best-product .product-heading {
+  padding: 1rem 15rem;
+}
+.product-heading h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65px;
+  color: #224229;
+  margin: 1rem;
+}
+.product-heading p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  color: #224229;
+}
+
+.p-cards-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  gap: 1rem;
+}
+.p-cards-container .p-card {
+  padding: 0.5rem 1rem;
+  color: #224229;
+}
+
+.p-card .logo-container {
+  width: 68px;
+  height: 68px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  background: currentColor;
+  border-radius: 50%;
+  justify-content: center;
+}
+.p-card h3 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  color: #224229;
+  margin: 0.5rem;
+}
+
+.p-card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: center;
+  margin: 0.5rem;
+}
+
+.p-cards-container .plantation .logo-container {
+  background-color: #f8f1e3;
+}
+
+/*------ SERVICES --*/
+.services {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  padding: 3vw;  
+  padding: 1rem 0 4rem;
+  color: #224229;
+}
+.services .cards-container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  height: 100%;
+}
+.cards-container .s-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 17vw;
+  padding: 2rem;
+  text-align: center;
+  line-height: 1.5rem;
+}
+.s-card span {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: left;
+}
+.s-card p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.services .image {
+  background-image: url("./assets/images/image3.jpeg");
+  width: 674px;
+  height: 500px;
+  background-repeat: no-repeat;
+  border-radius: 20px;
+  background-size: cover;
+  background-position: center;
+}
+
+/*------ NEW ARRIVALS --*/
+.new-arrivals {
+  padding: 40px 120px;
+  color: white;
+}
+.new-arrivals .image-container {
+  background-image: url("./assets/images/image1.jpeg");
+  height: 428px;
+  /* background-position: center; */
+  background-size: cover;
+  border-radius: 100px 0px 100px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.new-arrivals .image-text {
+  padding: 0.5rem 18rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  flex-direction: column;
+}
+.image-text h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65px;
+  margin: 0;
+}
+.image-text p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+  margin: 0;
+}
+.new-arrivals .image-text p {
+  line-height: 1.75rem;
+}
+.new-arrivals .clients-container {
+  color: #224229;
+  display: grid;
+  grid-template-columns: 0.65fr 1fr;
+  align-items: center;
+  padding: 0.75rem 0;
+  gap: 10vw;
+}
+.clients-container h1 {
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 65px;
+  margin: 1rem 0;
+}
+.clients-container p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+
+.new-arrivals .logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #000;
+  gap: 3rem;
+}
+.logo-container .n-a-icons {
+  display: flex;
+  align-items: center;
+}
+.logo-container .n-a-icons span {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.logo-container .company-text span {
+  font-size: 28px;
+}
+.logo-container .drop span {
+  text-align: left;
+}
+
+.logo-container .leaf div {
+  display: flex;
+  flex-direction: column;
+}
+.leaf div .sp1 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: center;
+}
+.leaf div .sp2 {
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 28px;
+  text-align: center;
+}
+
+.new-arrivals .dots-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+  padding: 1rem 0.5rem 0.5rem;
+}
+.dots-container span {
+  width: 10px;
+  height: 10px;
+  background-color: #224229;
+  border-radius: 50%;
+}
+/*------ FOOTER ----*/
+.footer {
+  background-color: #224229;
+  color: white;
+  /* padding: 0.5rem 1rem */
+}
+.footer .box-container {
+  border-bottom: 1px solid #f8f1e3;
+}
+.footer .footer-boxes {
+  /* display: flex;
+    justify-content: space-between;
+    gap: 1rem; */
+  /* padding: 40px 80px 40px 120px; */
+  display: grid;
+  grid-template-columns: 0.75fr 0.75fr 1fr;
+  padding: 40px 120px;
+  gap: 3vw;
+}
+/* .box{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+.box h4 {
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 23px;
+  text-align: left;
+}
+.box p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28px;
+  text-align: left;
+}
+.box .icons-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+.box .icons-container .icons {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: #f8f1e3;
+}
+.information ul {
+  list-style: none;
+  padding: 0;
+}
+.information ul li {
+  margin: 0.5rem 0;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
+}
+.information button {
+  font-family: "Ubuntu", sans-serif;
+  background-color: #f8f1e3;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 14px;
+  color: #224229;
+  border: none;
+  padding: 1rem 1.25rem;
+  border-radius: 1.5rem;
+  margin-top: 1rem;
+}
+.map-container {
+  border: 2px solid #c4c4c4;
+  padding: 1rem;
+  width: 442px;
+  height: 210px;
+  border-radius: 35px 0px 35px 0px;
+}
+.map-container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 35px;
+}
+.footer .copy-right {
+  text-align: center;
+  padding: 1.5rem 0.5rem;
+  margin: 0;
+}
+
+/* RESPONSIVE DESING */
+@media screen and (max-width: 480px) {
+  .header-container {
+    padding: 20px 50px;
+  }
+  .header-container .heading {
+    font-size: 16px;
+  }
+  .header-container .menu-icon {
+    display: block;
+  }
+  .header-container .nav-bar {
+    display: none;
+  }
+
+  /* --- FAVORITE FRESH PLANTS  --*/
+  .f-p-main {
+    flex-flow: column-reverse;
+    padding: 20px 50px 0;
+    gap: 3rem;
+    align-items: center;
+  }
+  .f-p-main .f-p-image {
+    width: 230px;
+    height: 250px;
+    border-radius: 80px 0px 80px 0px;
+    padding: 1.25rem;
+  }
+  .f-p-image img {
+    width: 230px;
+    height: 330px;
+    border-radius: 80px 0px 80px 0px;
+  }
+  .f-p-heading {
+    align-items: center;
+    padding: 0.5rem;
+  }
+  .f-p-heading h1 {
+    padding-left: 0;
+    font-size: 24px;
+    line-height: 40px;
+    text-align: center;
+  }
+  .f-p-heading p {
+    text-align: center;
+  }
+  .f-p-heading button {
+    margin-top: 1rem;
+  }
+  /* --- BEST PRODUCTS --*/
+
+  .best-product {
+    padding: 20px 50px;
+    margin-top: 4rem;
+  }
+  .best-product .product-heading {
+    padding: 1rem;
+  }
+  .product-heading h1 {
+    line-height: 30px;
+    font-size: 20px;
+  }
+  .p-cards-container {
+    display: grid;
+  }
+
+  /* --- SERVICES --*/
+  .services {
+    display: flex;
+    flex-direction: column-reverse;
+    padding: 1rem 0 2rem;
+  }
+  .services .image {
+    width: -webkit-fill-available;
+    height: 398px;
+    border-radius: 20px;
+    background-position: center;
+  }
+  .services .cards-container {
+    display: grid;
+    gap: 0;
+  }
+  .services .cards-container .s-card {
+    width: auto;
+    padding: 20px 50px;
+  }
+
+  /** NEW ARRIVALS --*/
+  .new-arrivals {
+    padding: 0;
+  }
+  .new-arrivals .image-container {
+    width: 100vw;
+    height: 754px;
+  }
+  .new-arrivals .image-text {
+    padding: 0.5rem 2rem;
+  }
+  .image-text h1 {
+    font-size: 24px;
+    line-height: 35px;
+  }
+  .new-arrivals .clients-container {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    text-align: center;
+    padding: 20px 50px;
+  }
+  .new-arrivals .clients-container h1 {
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 23px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 0;
+  }
+  .clients-container p {
+    text-align: center;
+  }
+  .new-arrivals .logo-container {
+    gap: 0;
+    padding: 5px 50px;
+  }
+  .logo-container .prev,
+  .next {
+    width: 50px;
+    height: 50px;
+  }
+  .prev img,
+  .next img {
+    width: 100%;
+    height: 100%;
+  }
+  .logo-container .leaf {
+    display: none;
+  }
+  .logo-container .company-text {
+    display: none;
+  }
+  .logo-container .company {
+    display: none;
+  }
+
+  /* --FOOTER --*/
+  .footer .footer-boxes {
+    grid-template-columns: 1fr;
+    padding: 20px 50px 80px;
+    gap: 2rem;
+  }
+  .footer-boxes .box {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .box p {
+    text-align: center;
+  }
+  .footer .map-container {
+    width: 64vw;
+    height: 64vw;
+    border-radius: 25px 0px 25px 0px;
+  }
+  .footer .copy-right {
+    font-size: 10px;
+  }
+}
