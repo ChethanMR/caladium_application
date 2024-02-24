@@ -22,6 +22,9 @@ body {
 .p-40-120 {
   padding: 40px 120px;
 }
+.p-5-8{
+  padding: 5vh 8vw;
+}
 .card-active {
   background-color: #224229;
   color: white;
@@ -40,7 +43,9 @@ button {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 40px 120px;
+  /* padding: 40px 120px; */
+  padding: 5vh 8vw;
+
   background-color: #224229;
   color: white;
 }
@@ -263,8 +268,8 @@ nav ul li {
 }
 .services .image {
   background-image: url("./assets/images/image3.jpeg");
-  width: 674px;
-  height: 500px;
+  width: 50vw;
+  height: 510px;
   background-repeat: no-repeat;
   border-radius: 20px;
   background-size: cover;
@@ -273,7 +278,7 @@ nav ul li {
 
 /*------ NEW ARRIVALS --*/
 .new-arrivals {
-  padding: 40px 120px;
+  /* padding: 40px 120px; */
   color: white;
 }
 .new-arrivals .image-container {
@@ -339,7 +344,7 @@ nav ul li {
   align-items: center;
   justify-content: space-between;
   color: #000;
-  gap: 3rem;
+  gap: 1vw;
 }
 .logo-container .n-a-icons {
   display: flex;
@@ -404,10 +409,9 @@ nav ul li {
   /* display: flex;
     justify-content: space-between;
     gap: 1rem; */
-  /* padding: 40px 80px 40px 120px; */
   display: grid;
   grid-template-columns: 0.75fr 0.75fr 1fr;
-  padding: 40px 120px;
+  /* padding: 40px 120px; */
   gap: 3vw;
 }
 /* .box{
@@ -465,7 +469,7 @@ nav ul li {
 .map-container {
   border: 2px solid #c4c4c4;
   padding: 1rem;
-  width: 442px;
+  width: auto;
   height: 210px;
   border-radius: 35px 0px 35px 0px;
 }
